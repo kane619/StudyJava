@@ -203,11 +203,36 @@ http://localhost:8080/
 
 **2.4所有的/favicon.icon 都是在静态资源文件下找****
 
-3.**模板引擎  ** 
+**3**.**模板引擎  ** 
 
 JSP thymeleaf等  推荐使用thymeleaf 语法更简单 功能更强大
 
-3.1引入thymeleaf
+3.1 引入thymeleaf
+
+```java
+<thymeleaf.verion>3.0.9.RELEASE</thymeleaf.verion>
+<thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
+```
+
+3.2 thymeleaf使用&语法
+
+只要我们把HTML页面放在templates目录里面
+
+1)导入thymeleaf的名称空间
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+
+2)语法
+
+th: 替换HTML属性
+
+3)SpringMVC自动配置
+
+https://spring.io/guides/gs/serving-web-content/
+
+
+
+1）springboot在自动配置组件的时候，先看容器中有没有用户自己配置的
 
 [TOC]
 
